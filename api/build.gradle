@@ -1,0 +1,15 @@
+plugins {
+    id 'project-conventions'
+}
+
+dependencies {
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.retry:spring-retry:1.3.4'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+    implementation 'com.google.guava:guava:32.1.2-jre'
+}
+
+springBoot {
+    mainClass = 'com.reliaquest.api.ApiApplication'
+}
